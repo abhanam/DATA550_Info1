@@ -10,6 +10,7 @@ here::i_am(
 )
 ```
 
+
 ```{r, load-random-numbers, include = FALSE}
 #! TO DO: 
 #!   read random_numbers1 from output directory
@@ -25,6 +26,11 @@ random_numbers2 <- readRDS(
 #!   read random_numbers3 from output directory
 random_numbers3 <- readRDS(
   here::here("output/random_numbers3.rds")
+)
+#! TO DO: 
+#!   read random_numbers4 from output directory
+random_numbers4 <- readRDS(
+  here::here("output/random_numbers4.rds")
 )
 ```
 
@@ -47,4 +53,11 @@ hist(random_numbers2)
 ```{r, random-numbers3-histogram}
 #| fig.cap = "Third set of random numbers"
 hist(random_numbers3)
+```
+
+# Random numbers 4
+
+```{r, random-numbers4-histogram}
+#| fig.cap = "Fourth set of random numbers"
+hist(random_numbers4)
 ```
